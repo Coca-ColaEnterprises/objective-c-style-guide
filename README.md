@@ -1,6 +1,6 @@
-# The official raywenderlich.com Objective-C style guide.
+# The official Coca Cola Enterprises Objective-C style guide.
 
-This style guide outlines the coding conventions for raywenderlich.com.
+This style guide outlines the coding conventions for Coca Cola Enterprises.
 
 ## Introduction
 
@@ -115,7 +115,7 @@ Use `#pragma mark -` to categorize methods in functional groupings and protocol/
 
 ## Spacing
 
-* Indent using 2 spaces (this conserves space in print and makes line wrapping less likely). Never indent with tabs. Be sure to set this preference in Xcode.
+* Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
 
 **Preferred:**
@@ -190,7 +190,7 @@ UIButton *settingsButton;
 UIButton *setBut;
 ```
 
-A three letter prefix should always be used for class names and constants, however may be omitted for Core Data entity names. For any official raywenderlich.com books, starter kits, or tutorials, the prefix 'RWT' should be used.
+A three letter prefix should always be used for class names and constants, however may be omitted for Core Data entity names.
 
 Constants should be camel-case with all words capitalized and prefixed by the related class name for clarity.
 
@@ -363,7 +363,7 @@ Constants are preferred over in-line string literals or numbers, as they allow f
 **Preferred:**
 
 ```objc
-static NSString * const RWTAboutViewControllerCompanyName = @"RayWenderlich.com";
+static NSString * const RWTAboutViewControllerCompanyName = @"Coca Cola Enterprises";
 
 static CGFloat const RWTImageThumbnailHeight = 50.0;
 ```
@@ -371,7 +371,7 @@ static CGFloat const RWTImageThumbnailHeight = 50.0;
 **Not Preferred:**
 
 ```objc
-#define CompanyName @"RayWenderlich.com"
+#define CompanyName @"Coca Cola Enterprises"
 
 #define thumbnailHeight 2
 ```
@@ -700,22 +700,6 @@ A long line of code like this should be carried on to the second line adhering t
 self.productsRequest = [[SKProductsRequest alloc] 
   initWithProductIdentifiers:productIdentifiers];
 ```
-
-
-## Smiley Face
-
-Smiley faces are a very prominent style feature of the raywenderlich.com site!  It is very important to have the correct smile signifying the immense amount of happiness and excitement for the coding topic.  The end square bracket is used because it represents the largest smile able to be captured using ascii art.  A half-hearted smile is represented if an end parenthesis is used, and thus not preferred.
-
-**Preferred:**
-```objc
-:]
-```
-
-**Not Preferred:**
-```objc
-:)
-```  
-
 
 ## Xcode project
 
