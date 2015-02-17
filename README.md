@@ -322,16 +322,18 @@ Dot-notation should **always** be used for accessing and mutating properties, as
 
 **Preferred:**
 ```objc
-NSInteger arrayCount = [self.array count];
 view.backgroundColor = [UIColor orangeColor];
 [UIApplication sharedApplication].delegate;
 ```
 
 **Not Preferred:**
 ```objc
-NSInteger arrayCount = self.array.count;
 [view setBackgroundColor:[UIColor orangeColor]];
 UIApplication.sharedApplication.delegate;
+```
+**Exception:**
+```objc
+NSInteger arrayCount = self.array.count;
 ```
 
 ## Literals
