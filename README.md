@@ -133,6 +133,18 @@ if (user.isHappy)
 {
     //Do something
 }
+else 
+{
+    //Do something else
+}
+```
+
+**Not Preferred:**
+```objc
+if (user.isHappy)
+{
+    //Do something
+}
 else {
     //Do something else
 }
