@@ -127,7 +127,7 @@ if (user.isHappy) {
 }
 ```
 
-**Not Preferred:**
+**Also Acceptable:**
 ```objc
 if (user.isHappy)
 {
@@ -135,6 +135,21 @@ if (user.isHappy)
 }
 else {
     //Do something else
+}
+```
+
+**Preferred:**
+```objc
+- (void)methodName {
+
+}
+```
+
+**Not Preferred:**
+```objc
+- (void)methodName
+{
+
 }
 ```
 
