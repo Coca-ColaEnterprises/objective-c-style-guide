@@ -127,18 +127,6 @@ if (user.isHappy) {
 }
 ```
 
-**Also Acceptable:**
-```objc
-if (user.isHappy)
-{
-    //Do something
-}
-else 
-{
-    //Do something else
-}
-```
-
 **Not Preferred:**
 ```objc
 if (user.isHappy)
@@ -146,6 +134,15 @@ if (user.isHappy)
     //Do something
 }
 else {
+    //Do something else
+}
+
+if (user.isHappy)
+{
+    //Do something
+}
+else 
+{
     //Do something else
 }
 ```
