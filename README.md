@@ -117,6 +117,7 @@ Use `#pragma mark -` to categorize methods in functional groupings and protocol/
 
 * Indent using 4 spaces. Never indent with tabs. Be sure to set this preference in Xcode.
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
+* Single space between chained method calls.
 
 **Preferred:**
 ```objc
@@ -161,13 +162,21 @@ else
 
 }
 ```
+**Preferred:**
+```objc
+[[AppData sharedInstance] setupData:data];
+```
+
+**Not Preferred:**
+```objc
+[[AppData sharedInstance]setupData:Data];
+```
 
 * There should be exactly one blank line between methods to aid in visual clarity and organization. Whitespace within methods should separate functionality, but often there should probably be new methods.
 * Prefer using auto-synthesis. But if necessary, `@synthesize` and `@dynamic` should each be declared on new lines in the implementation.
 * Colon-aligning method invocation should often be avoided.  There are cases where a method signature may have >= 3 colons and colon-aligning makes the code more readable. Please do **NOT** however colon align methods containing blocks because Xcode's indenting makes it illegible.
 
 **Preferred:**
-
 ```objc
 // blocks are easily readable
 [UIView animateWithDuration:1.0 animations:^{
